@@ -29,14 +29,13 @@ const columns: GridColDef[] = [
 const rows = userDetail;
 
 export default function SecPage() {
-    // const navigate = useNavigate()
-    // const user = localStorage.getItem("user")
-    // useEffect(() => {
-    //     if (user == null) {
-    //         navigate("/")
-    //     }
-    // }, [user])
-
+    const navigate = useNavigate()
+    const user = localStorage.getItem("user")
+    useEffect(() => {
+        if (user == null) {
+            navigate("/")
+        }
+    }, [user])
 
     return (
         <Box sx={{ height: 625, width: '100%' }}>
